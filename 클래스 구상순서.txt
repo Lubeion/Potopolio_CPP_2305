@@ -1,0 +1,26 @@
+Character-> 모든 Player, Enemy의 기초
+Mesh, Hp, Mp, Damage, Element, ShieldCount(int)
+Shield(Mesh), ShieldCollider(Sphere)
+
+Player-> Character, MoveInterface, ActionInterface 상속
+Weapon, Skill
+
+Enemy-> Character, ActionInterface
+
+ArmedEnemy-> Enemy
+Weapon
+
+FlyEnemy-> FlyInterface, Enemy
+
+Boss-> FlyEnemy
+Skill
+
+Weapon-> WeaponInterface
+
+Sword-> Weapon
+
+Bow-> Weapon
+
+Projectile-> 모든 투사체의 기초
+Speed, Mass
+Gravity 를 Mass에 따라 적용(화살, 마법)
